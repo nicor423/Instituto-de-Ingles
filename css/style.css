@@ -1,0 +1,102 @@
+.contact-icons{
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+}
+.modal-header{
+	background-color: #38BED6;
+}
+.card{
+	height: 550px;
+}
+.carousel-caption{
+	color: white;
+}
+.navbar{
+	background-color: #039be5;
+	font-weight: bold;
+}
+.nav-item{
+	margin-right: 25px;
+}
+.nav-link{
+	color:white;
+}
+
+/*Estilo pagina alumnos*/
+#alerta-exito{
+	position: static;
+	margin-top: 1em;
+}
+
+#alerta-error{
+	position: static;
+	margin-top: 1em;
+}
+
+#alerta-error2{
+	position: static;
+	margin-top: 1em;
+}
+
+#col1{
+	margin-bottom: 1em;
+}
+#col2{
+	margin-bottom: 1em;
+}
+
+#boton{
+	margin-right: 1em;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr { border: 1px solid #ccc; }
+	td {
+
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+	td:before {
+
+		position: absolute;
+
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+}
+/*Estilo pagina de alumnos*/
