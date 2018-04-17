@@ -50,7 +50,17 @@
 	margin-right: 1em;
 }
 
+.navbar-light .navbar-nav .nav-link{
+	color:white;
+}
 
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+	color:red;
+}
+.d-flex{
+	position: absolute;
+	bottom: 40px;
+}
 table {
   width: 100%;
   border-collapse: collapse;

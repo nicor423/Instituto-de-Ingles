@@ -1,155 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="vievport" content="width=device-width, initial-scale=1">
-	<title>Practico Grupal</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="vievport" content="width=device-width, initial-scale=1">
+		<title>Practico Grupal</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" height="30">
-        <img src="images/logo1.png" height="20">
-        <img src="images/logo2.png" height="20">
-        <img src="images/logo3.png" height="20">
-        <img src="images/logo4.png" height="20">
-        <img src="images/logo5.png" height="20">
-        <img src="images/logo6.png" height="20">
-        <img src="images/logo7.png" height="20">
-        <img src="images/logo4.png" height="20">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <!--navbarNavDpropdown id del div con los items -->
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="courses.html">Cursos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary btn-outline btn-circle collapsed btn-block waves-effect" href="pgrupal-entrega.html" aria-expanded="false">Entrar</a>
-            <!-- <a class="nav-link" href="#"><button type="button" class="btn btn-sm btn-info">Sing in</button></a> -->
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <br>
-
-
-
-	<div class="container">
-		<div class="alert alert-success" role="alert" id="alerta-exito">
-			Datos obtenidos correctamente
-		</div>
-
-		<div class="alert alert-danger" role="alert" id="alerta-error">
-			Datos no obtenidos
-		</div>
-		<div class="row">
-			<!-- <div class="col-sm-12 col-lg-4" id="col1">
-				<button type="button" id="boton" class="btn btn-primary">Consultar alumnos</button>
-
-			</div> -->
-			<div class="col-sm-12 col-lg-4" id="col2">
-				<!-- Button trigger modal -->
-				<button type="button" id="boton2" class="btn btn-success" data-toggle="modal" data-target="#Modal1">Agregar alumno</button>
-			</div>
-		</div>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light ">
+	      <a class="navbar-brand" href="index.html">
+	        <img src="images/logo.png" height="30">
+	        <img src="images/logo1.png" height="20">
+	        <img src="images/logo2.png" height="20">
+	        <img src="images/logo3.png" height="20">
+	        <img src="images/logo4.png" height="20">
+	        <img src="images/logo5.png" height="20">
+	        <img src="images/logo6.png" height="20">
+	        <img src="images/logo7.png" height="20">
+	        <img src="images/logo4.png" height="20">
+	      </a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <!--navbarNavDpropdown id del div con los items -->
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item ">
+	            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="courses.html">Cursos</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="contact.html">Contacto</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="btn btn-primary btn-outline btn-circle collapsed btn-block waves-effect" href="pgrupal-entrega.html" aria-expanded="false">Entrar</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+	    <br>
 
 		<div class="container">
-			<div class="table-responsive">
-
-					<table id="tabla" class="table table-bordered table-hover">
-						<thead>
-							<th>Foto</th>
-							<th>Nombre</th>
-							<th>Apellido</th>
-							<th>Edad</th>
-							<th>Email</th>
-						</thead>
-						<tbody>
-
-						</tbody>
-					</table>
-
+			<div class="alert alert-success" role="alert" id="alerta-exito">
+				Datos obtenidos correctamente
 			</div>
+
+			<div class="alert alert-danger" role="alert" id="alerta-error">
+				Datos no obtenidos
+			</div>
+			<div class="row">
+				<!-- <div class="col-sm-12 col-lg-4" id="col1">
+					<button type="button" id="boton" class="btn btn-primary">Consultar alumnos</button>
+
+				</div> -->
+				<div class="col-sm-12 col-lg-4" id="col2">
+					<!-- Button trigger modal -->
+					<button type="button" id="boton2" class="btn btn-success" data-toggle="modal" data-target="#Modal1">Agregar alumno</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="table-responsive">
+
+						<table id="tabla" class="table table-bordered table-hover">
+							<thead>
+								<th>Foto</th>
+								<th>Nombre</th>
+								<th>Apellido</th>
+								<th>Edad</th>
+								<th>Email</th>
+							</thead>
+							<tbody>
+
+							</tbody>
+						</table>
+
+				</div>
+			</div>
+			<br>
+			<br>
 		</div>
-		<br>
-		<br>
-	</div>
 
-	<!-- Modal -->
-    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLabel">Agrega un alumno</h3><br>
+		<!-- Modal -->
+	    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	      <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <h3 class="modal-title" id="exampleModalLabel">Agrega un alumno</h3><br>
 
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-			<!-- Default form register -->
-			<form>
-			    <input type="text"  class="form-control" placeholder="Nombre">
-			    <br>
-			    <input type="text"  class="form-control" placeholder="Apellido">
-			    <br>
-			    <input type="text"  class="form-control" placeholder="Edad">
-			    <br>
-			    <input type="email"  class="form-control" placeholder="Email">
-			    <br>
-			    <input type="file"  class="form-control" placeholder="Foto">
-			    <div class="text-center mt-4">
-			        <button class="btn btn-outline-primary" type="submit">Enviar</button>
-			    </div>
-			</form>
-			<!-- Default form register -->
+	            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	              <span aria-hidden="true">&times;</span>
+	            </button>
+	          </div>
+	          <div class="modal-body">
+				<!-- Default form register -->
+				<form>
+				    <input type="text"  class="form-control" placeholder="Nombre">
+				    <br>
+				    <input type="text"  class="form-control" placeholder="Apellido">
+				    <br>
+				    <input type="text"  class="form-control" placeholder="Edad">
+				    <br>
+				    <input type="email"  class="form-control" placeholder="Email">
+				    <br>
+				    <input type="file"  class="form-control" placeholder="Foto">
+				    <div class="text-center mt-4">
+				        <button class="btn btn-outline-primary" type="submit">Enviar</button>
+				    </div>
+				</form>
+				<!-- Default form register -->
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancelar</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
 
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Todos los derechos reservados © | Nicolás Rastellino 2018</span>
-      </div>
-    </footer>
+	    <footer class="footer">
+	      <div class="container">
+	        <span class="text-muted">Todos los derechos reservados © | Nicolás Rastellino 2018</span>
+	      </div>
+	    </footer>
 
 
-	<script src="js/jquery-3.3.1.min.js"> </script>
+		<script src="js/jquery-3.3.1.min.js"> </script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<script src="js/pgrupal.js"></script>
-</body>
+		<script src="js/pgrupal.js"></script>
+	</body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-
-</body>
-</html
