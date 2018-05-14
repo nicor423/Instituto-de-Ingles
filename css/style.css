@@ -5,6 +5,10 @@
 }
 .modal-header{
 	background-color: #38BED6;
+	color: white;
+}
+.txt-hr{
+	margin-left: 235px;
 }
 .card{
 	height: 550px;
@@ -52,15 +56,57 @@
 
 .navbar-light .navbar-nav .nav-link{
 	color:white;
+	vertical-align: center;
 }
-
 .navbar-light .navbar-nav .nav-item.active .nav-link{
-	color:red;
+	color:white;
+	text-decoration: underline;
+	font-size: 15pt;
+	vertical-align: center;
+
+}
+#btn-entrar{
+	border-color: white;
+	border-style: solid;
+	border-width: 2px;
 }
 .d-flex{
 	position: absolute;
 	bottom: 40px;
 }
+/*input:invalid{
+	border: 1px solid red;
+}
+input:valid{
+	border: 1px solid green;
+}*/
+
+input:invalid {
+  background-color: #ffdddd;
+}
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+input:required:invalid {
+  border-color: #C00000;
+}
+input:required:valid {
+  border-color: #33FF00  ;
+}
+
+
 table {
   width: 100%;
   border-collapse: collapse;
